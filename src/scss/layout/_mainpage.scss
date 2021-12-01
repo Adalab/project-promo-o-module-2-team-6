@@ -1,0 +1,15 @@
+.card__container {
+  width: 100%;
+  height: 457px;
+  background-color: $background-card1;
+
+  &__reset,
+  &__far {
+    color: $text-icon;
+    font-family: $font-index-subtitle;
+  }
+  &__button {
+      border: solid 1px white;
+      border-radius: 15px;
+  }
+}
