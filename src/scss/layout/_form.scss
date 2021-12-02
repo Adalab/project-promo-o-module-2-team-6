@@ -1,0 +1,46 @@
+.form {
+  &__design {
+    &--wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 22px 0 10px;
+    }
+  }
+  &__title {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    &--icon {
+      display: inline;
+      font-size: 18px;
+    }
+    &--design {    
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__label {
+    &--color {
+      padding-left: 19px;
+    }
+  }
+  &__input {
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &--color {
+      width: 30px;
+      height: 25px;
+      &--wrapper {
+        display: flex;
+      }
+      &--palette {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+

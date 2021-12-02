@@ -1,0 +1,44 @@
+//Block1
+$colorA1: #114e4e;
+$colorB1: #438792;
+$colorC1: #a2deaf;
+
+//Block2
+$colorA2: #420101;
+$colorB2: #bd1010;
+$colorC2: #e95626;
+
+//Block3
+$colorA3: #3e5b65;
+$colorB3: #eab052;
+$colorC3: #a0c0cf;
+
+.color {
+  &A {
+    &1 {background-color: $colorA1;}
+    &2 {background-color: $colorA2;}
+    &3 {background-color: $colorA3;}
+  }
+  &B {
+    &1 {background-color: $colorB1;}
+    &2 {background-color: $colorB2;}
+    &3 {background-color: $colorB3;}
+  }
+  &C {
+    &1 {background-color: $colorC1;}
+    &2 {background-color: $colorC2;}
+    &3 {background-color: $colorC3;}
+  }
+}
+
+.icon {
+  &-light {
+    color: $text-index-title;
+  }
+  &-dark {
+    color: $text-index-subtitle;
+  }
+  &-medium {
+    color: $text-icon;
+  }
+}
