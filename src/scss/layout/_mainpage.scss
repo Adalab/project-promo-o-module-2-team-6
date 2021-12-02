@@ -1,18 +1,18 @@
-.card__container {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   width: 100%;
   height: 457px;
   background-color: $background-card1;
+  background-color: linear-gradient(to bottom, #bfcdd0, #dde9ed);
 
-  &__reset,
-  &__far {
+  &__reset {
     color: $text-icon;
     font-family: $font-index-subtitle;
   }
   &__button {
-      border: solid 1px white;
-      border-radius: 15px;
+    border: solid 1px white;
+    border-radius: 15px;
   }
 }
