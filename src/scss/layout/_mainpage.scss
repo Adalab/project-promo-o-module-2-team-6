@@ -7,12 +7,32 @@
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
 }
 .card__preview {
-  color: $text-icon;
-  font-family: $font-index-subtitle;
+  display: block;
+  box-sizing: border-box;
+}
+.card__preview--reset {
   width: 75px;
   height: 30px;
-  background-color: red;
+  border: solid 1px white;
+  border-radius: 15px;
+  background-color: transparent;
 }
+.card__reset--icon {
+  color: #54585a;
+  align-items: left;
+}
+.card__preview--default {
+  width: 240px;
+  height: 329px;
+  margin: 88px 35px 40px 45px;
+  background-color: #fff;
+}
+//   color: $text-icon;
+//   font-family: $font-index-subtitle;
+//   width: 75px;
+//   height: 30px;
+//   background-color: red;
+// }
 //   &__button {
 //     border: solid 1px white;
 //     border-radius: 15px;
