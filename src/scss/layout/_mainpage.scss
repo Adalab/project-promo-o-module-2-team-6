@@ -1,4 +1,7 @@
 .card__container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
   width: 100%;
   height: 457px;
   background-color: $background-card1;
