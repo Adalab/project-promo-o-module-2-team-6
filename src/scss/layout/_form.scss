@@ -29,4 +29,9 @@
     color: $text-index-subtitle;
     line-height: 20px;
   }
+  &__input {
+    width: 100%;
+    border: solid 1px $input-border;
+    height: 30px;
+  }
 }
