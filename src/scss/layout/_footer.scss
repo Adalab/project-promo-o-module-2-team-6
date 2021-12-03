@@ -5,6 +5,14 @@
   padding-top: 30px;
   padding-bottom: 45px;
   border-top: 1px solid #b8b8b9;
+  @media (min-width: 768px){
+    display: flex;
+    justify-content: space-around;
+    
+
+  }
+    
+  
   &__copy {
     display: flex;
     justify-content: center;
@@ -17,12 +25,20 @@
     /*text-align: center;*/
     margin-top: 30px;
     width: 50%;
-    margin: 12px 47px 0 48px;
-    padding-left: 60px;
+    /*margin: 12px 47px 0 48px;
+    padding-left: 60px;*/
+    
 
     .img {
       width: 115px;
       height: 45px;
+      display: flex;
+      justify-self: flex-end;
+      
+    }
+    @media (min-width:768px){
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }
