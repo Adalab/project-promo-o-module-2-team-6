@@ -13,19 +13,23 @@
   outline: 1px solid red;
 }
 .card__preview--reset {
+  display: inline;
   width: 75px;
   height: 30px;
   border: solid 1px white;
   border-radius: 15px;
   background-color: transparent;
-  margin: 38px 200px 0 45px;
+  margin: 38px auto 0 45px;
   outline: 1px solid red;
+  .card__reset--icon {
+    display: inline;
+    margin: 5px auto 5px 10px;
+    color: #54585a;
+    font-size: 12px;
+    outline: 1px solid red;
+  }
 }
-.card__reset--icon {
-  color: #54585a;
-  align-items: left;
-  outline: 1px solid red;
-}
+
 .card__preview--default {
   width: 240px;
   height: 329px;
@@ -38,11 +42,42 @@
   margin-left: 20px;
   font-family: $font-card-title;
 }
-.h3--text {
-  font-weight: bold;
-  margin-top: 21px;
-  outline: 1 px solid red;
+.h3--card {
+  font-weight: 700;
+  color: $text-index-subtitle;
+  padding-top: 21px;
+  padding-bottom: 4px;
 }
+.h4--card {
+  font-weight: 400;
+  color: $text-icon;
+  margin-top: 4px;
+}
+.card__image--default {
+  width: 240px;
+  height: 200px;
+  background-image: url("https://www.fillmurray.com/240/200");
+  background-size: cover;
+  margin-top: 10px;
+}
+.card__links--section {
+  margin: 10px auto 12px 20px;
+  box-sizing: border-box;
+  .social--links {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: solid 2px #a2deaf;
+    margin-left: 10px;
+    .social--icon {
+      color: $text-index-subtitle;
+      font-size: 18px;
+      // border: 7px 10px;
+      padding: 8px 7.5px 6px 7.5px;
+    }
+  }
+}
+
 //   color: $text-icon;
 //   font-family: $font-index-subtitle;
 //   width: 75px;
