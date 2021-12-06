@@ -1,4 +1,4 @@
-![Adalab](./src/images/Tarjetas-molonas.svg)
+![Logo](./src/images/Tarjetas-molonas.svg)
 
 # Awesome profile cards - Proyecto Módulo 2
 
@@ -6,7 +6,7 @@
 
 ### ¿Dónde verlo?
 
-Link a la página cuando esté subida
+[Link a la página cuando esté subida](http://#/)
 
 ### Integrantes del equipo
 
@@ -28,7 +28,7 @@ Link a la página cuando esté subida
     - Flexbox y Grid
     - Variables y Mixins
     - Estilos anidados
-- Javascript
+- JavaScript
 - Control de versiones con Git a través de la terminal
 - Automatización de procesos con Gulp de NodeJS
 - Planificación del proyecto bajo el marco de trabajo Scrum
