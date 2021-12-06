@@ -34,6 +34,15 @@
   box-shadow: 0 1px 10px 0 var(--black-20), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   outline: 1px solid red;
 }
+.preview--text {
+  margin-left: 20px;
+  font-family: $font-card-title;
+}
+.h3--text {
+  font-weight: bold;
+  margin-top: 21px;
+  outline: 1 px solid red;
+}
 //   color: $text-icon;
 //   font-family: $font-index-subtitle;
 //   width: 75px;
