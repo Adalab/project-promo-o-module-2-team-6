@@ -11,22 +11,22 @@
   display: block;
   box-sizing: border-box;
   outline: 1px solid red;
-}
-.card__preview--reset {
-  display: inline;
-  width: 75px;
-  height: 30px;
-  border: solid 1px white;
-  border-radius: 15px;
-  background-color: transparent;
-  margin: 38px auto 0 45px;
-  outline: 1px solid red;
-  .card__reset--icon {
+  .preview__reset {
     display: inline;
-    margin: 5px auto 5px 10px;
-    color: #54585a;
-    font-size: 12px;
+    width: 75px;
+    height: 30px;
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: transparent;
+    margin: 38px auto 0 45px;
     outline: 1px solid red;
+    &--icon {
+      display: inline;
+      margin: 5px auto 5px 10px;
+      color: #54585a;
+      font-size: 12px;
+      outline: 1px solid red;
+    }
   }
 }
 
@@ -37,39 +37,39 @@
   background-color: #fff;
   box-shadow: 0 1px 10px 0 var(--black-20), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   outline: 1px solid red;
-}
-.preview--text {
-  margin-left: 20px;
-  font-family: $font-card-title;
-}
-.h3--card {
-  font-weight: 700;
-  color: $text-index-subtitle;
-  padding-top: 21px;
-  padding-bottom: 4px;
-}
-.h4--card {
-  font-weight: 400;
-  color: $text-icon;
-  margin-top: 4px;
-}
-.card__image--default {
-  width: 240px;
-  height: 200px;
-  background-image: url("https://www.fillmurray.com/240/200");
-  background-size: cover;
-  margin-top: 10px;
-}
-.card__links--section {
-  margin: 10px auto 12px 20px;
-  box-sizing: border-box;
-  .social--links {
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
-    border: solid 2px #a2deaf;
-    margin-left: 10px;
-    .social--icon {
+  .preview__text {
+    margin-left: 20px;
+    font-family: $font-card-title;
+    &--name {
+      font-weight: 700;
+      color: $text-index-subtitle;
+      padding-top: 21px;
+      padding-bottom: 4px;
+      &--role {
+        font-weight: 400;
+        color: $text-icon;
+        margin-top: 4px;
+      }
+    }
+  }
+  .preview__image {
+    width: 240px;
+    height: 200px;
+    background-image: url("https://www.fillmurray.com/240/200");
+    background-size: cover;
+    margin-top: 10px;
+  }
+  .preview__links {
+    margin: 10px auto 12px 20px;
+    box-sizing: border-box;
+    &--social {
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      border: solid 2px #a2deaf;
+      margin-left: 10px;
+    }
+    &--icon {
       color: $text-index-subtitle;
       font-size: 18px;
       // border: 7px 10px;
@@ -77,15 +77,3 @@
     }
   }
 }
-
-//   color: $text-icon;
-//   font-family: $font-index-subtitle;
-//   width: 75px;
-//   height: 30px;
-//   background-color: red;
-// }
-//   &__button {
-//     border: solid 1px white;
-//     border-radius: 15px;
-//   }
-// }
