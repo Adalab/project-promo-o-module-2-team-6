@@ -1,18 +1,18 @@
 .container {
-  // display: flex;
-  // flex-direction: column;
-  // justify-items: center;
   width: 100%;
   height: 457px;
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
   outline: 1px solid red;
 }
 .card__preview {
-  display: block;
   box-sizing: border-box;
   outline: 1px solid red;
   .preview__reset {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    order: 1;
     width: 75px;
     height: 30px;
     border: solid 1px white;
@@ -21,8 +21,8 @@
     margin: 38px auto 0 45px;
     outline: 1px solid red;
     &--icon {
-      display: inline;
-      margin: 5px auto 5px 10px;
+      order: -1;
+      // margin: 5px auto 5px 10px;
       color: #54585a;
       font-size: 12px;
       outline: 1px solid red;
@@ -56,10 +56,13 @@
     width: 240px;
     height: 200px;
     background-image: url("https://www.fillmurray.com/240/200");
-    background-size: cover;
+    // background-size: cover;
     margin-top: 10px;
   }
   .preview__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 10px auto 12px 20px;
     box-sizing: border-box;
     &--social {
@@ -68,12 +71,12 @@
       border-radius: 16px;
       border: solid 2px #a2deaf;
       margin-left: 10px;
+      // padding: 8px 7.5px 6px 7.5px;
     }
     &--icon {
       color: $text-index-subtitle;
       font-size: 18px;
       // border: 7px 10px;
-      padding: 8px 7.5px 6px 7.5px;
     }
   }
 }
