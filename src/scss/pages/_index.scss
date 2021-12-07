@@ -7,15 +7,19 @@
   flex-direction: column;
   justify-content: center;
 }
+/*IMAGEN*/
 .tarjeta {
   width: 250px;
   height: 63px;
   padding-bottom: 30px;
-  @media (min-width: 768px) {
-    width: 419px;
-    height: 105px;
+  @mixin tablet {
+    @media (min-width: 768px) {
+      width: 419px;
+      height: 105px;
+    }
   }
 }
+/*TITULOS*/
 .main {
   &__title {
     font-family: $font-index-title;
@@ -23,9 +27,11 @@
     color: $text-index-title;
     margin-bottom: 20px;
     font-weight: 900;
-    @media (min-width: 768px) {
-      font-size: 24px;
-      margin-bottom: 10px;
+    @mixin tablet {
+      @media (min-width: 768px) {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
     }
   }
   &__subtitle {
@@ -35,12 +41,14 @@
     padding: 0 28px 0 28px;
     align-self: center;
     margin-bottom: 17px;
-
-    @media (min-width: 768px) {
-      font-size: 16px;
+    @mixin tablet {
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 }
+/* CAJA CONTENIDO DISEÑA COMPARTE RELLENA*/
 .icons {
   width: 268px;
   height: 73.8px;
@@ -50,9 +58,11 @@
   border-radius: 4px;
   margin: 17.8px 0 0.2px;
   padding: 15px 5px 5px 5px;
-  @media (min-width: 768px) {
-    width: 325px;
-    height: 86px;
+  @mixin tablet {
+    @media (min-width: 768px) {
+      width: 325px;
+      height: 86px;
+    }
   }
 
   &__content {
@@ -60,21 +70,24 @@
     height: 48.8px;
     margin: 10px 10px 10px 10px;
     align-self: center;
-    
-    @media (min-width: 768px) {
-      width: 75px;
-      height: 61px;
-      font-size: 28px;
+    @mixin tablet {
+      @media (min-width: 768px) {
+        width: 75px;
+        height: 61px;
+        font-size: 28px;
+      }
     }
   }
   &__content1 {
     width: 60px;
     height: 48.8px;
     align-self: center;
-    @media (min-width: 768px) {
-      width: 75px;
-      height: 61px;
-      font-size: 28px;
+    @mixin tablet {
+      @media (min-width: 768px) {
+        width: 75px;
+        height: 61px;
+        font-size: 28px;
+      }
     }
   }
 
@@ -83,8 +96,10 @@
     font-family: $font-index-subtitle;
     font-size: 13px;
     align-self: center;
-    @media (min-width: 768px) {
-      font-size: 16px;
+    @mixin tablet {
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
   &__content-fild {
@@ -92,8 +107,10 @@
     font-family: $font-index-subtitle;
     font-size: 13px;
     align-self: center;
-    @media (min-width: 768px) {
-      font-size: 16px;
+    @mixin tablet {
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
   &__content1-share {
@@ -101,13 +118,16 @@
     font-family: $font-index-subtitle;
     font-size: 13px;
     align-self: center;
-    @media (min-width: 768px) {
-      font-size: 16px;
+    @mixin tablet {
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 }
 
-.far {
+/*ICONOS*/
+.design {
   color: $text-index-title;
   width: 32px;
   height: 26px;
@@ -115,7 +135,7 @@
   text-align: center;
   padding-left: 5px;
 }
-.fas {
+.keyboard {
   color: $text-index-title;
   width: 32px;
   height: 26px;
@@ -124,6 +144,23 @@
   padding-left: 5px;
 }
 
+.share {
+  color: $text-index-title;
+  width: 32px;
+  height: 26px;
+  font-size: 22.4px;
+  text-align: center;
+  padding-left: 5px;
+}
+
+/*LINK*/
+.start {
+  text-align: center;
+  color: $text-button;
+  font-size: 16px;
+  font-family: $font-index-subtitle;
+  text-decoration: none;
+}
 .btn {
   text-transform: uppercase;
   width: 160px;
@@ -131,13 +168,10 @@
   margin: 90px 75px 0 65px;
   border-radius: 21px;
   background-color: $background-button;
-  color: $text-button;
-  font-size: 16px;
-  font-family: $font-index-subtitle;
-  
-  @media (min-width:768px) {
-    margin-top: 150px;
-    
+  text-align: center;
+  @mixin tablet {
+    @media (min-width: 768px) {
+      margin-top: 150px;
+    }
   }
-  
 }
