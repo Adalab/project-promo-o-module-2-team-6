@@ -5,7 +5,8 @@
   padding-top: 30px;
   padding-bottom: 45px;
   border-top: 1px solid #b8b8b9;
-  @mixin tablet {
+
+  @include tablet {
     @media (min-width: 768px) {
       display: flex;
       justify-content: space-around;
@@ -21,19 +22,17 @@
   }
 
   &__logo {
-    /*text-align: center;*/
     margin-top: 30px;
     width: 50%;
-    /*margin: 12px 47px 0 48px;
-    padding-left: 60px;*/
 
     .img {
       width: 115px;
       height: 45px;
-     display:block;
-     margin-left: 90px;
+      display: block;
+      margin-left: 90px;
     }
-    @mixin tablet {
+    
+    @include tablet {
       @media (min-width: 768px) {
         display: flex;
         justify-content: flex-end;

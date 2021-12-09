@@ -12,7 +12,7 @@
   width: 250px;
   height: 63px;
   padding-bottom: 30px;
-  @mixin tablet {
+  @include tablet {
     @media (min-width: 768px) {
       width: 419px;
       height: 105px;
@@ -27,7 +27,7 @@
     color: $text-index-title;
     margin-bottom: 20px;
     font-weight: 900;
-    @mixin tablet {
+    @include tablet {
       @media (min-width: 768px) {
         font-size: 24px;
         margin-bottom: 10px;
@@ -41,7 +41,7 @@
     padding: 0 28px 0 28px;
     align-self: center;
     margin-bottom: 17px;
-    @mixin tablet {
+    @include tablet {
       @media (min-width: 768px) {
         font-size: 16px;
       }
@@ -58,7 +58,7 @@
   border-radius: 4px;
   margin: 17.8px 0 0.2px;
   padding: 15px 5px 5px 5px;
-  @mixin tablet {
+  @include tablet {
     @media (min-width: 768px) {
       width: 325px;
       height: 86px;
@@ -70,7 +70,7 @@
     height: 48.8px;
     margin: 10px 10px 10px 10px;
     align-self: center;
-    @mixin tablet {
+    @include tablet {
       @media (min-width: 768px) {
         width: 75px;
         height: 61px;
@@ -82,7 +82,7 @@
     width: 60px;
     height: 48.8px;
     align-self: center;
-    @mixin tablet {
+    @include tablet {
       @media (min-width: 768px) {
         width: 75px;
         height: 61px;
@@ -96,7 +96,7 @@
     font-family: $font-index-subtitle;
     font-size: 13px;
     align-self: center;
-    @mixin tablet {
+    @include tablet {
       @media (min-width: 768px) {
         font-size: 16px;
       }
@@ -107,7 +107,7 @@
     font-family: $font-index-subtitle;
     font-size: 13px;
     align-self: center;
-    @mixin tablet {
+    @include tablet {
       @media (min-width: 768px) {
         font-size: 16px;
       }
@@ -118,7 +118,7 @@
     font-family: $font-index-subtitle;
     font-size: 13px;
     align-self: center;
-    @mixin tablet {
+    @include tablet {
       @media (min-width: 768px) {
         font-size: 16px;
       }
@@ -155,7 +155,6 @@
 
 /*LINK*/
 .start {
-  text-align: center;
   color: $text-button;
   font-size: 16px;
   font-family: $font-index-subtitle;
@@ -168,8 +167,10 @@
   margin: 90px 75px 0 65px;
   border-radius: 21px;
   background-color: $background-button;
-  text-align: center;
-  @mixin tablet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
     @media (min-width: 768px) {
       margin-top: 150px;
     }
