@@ -8,7 +8,7 @@
 
 [Link a la página cuando esté subida](http://#/)
 
-### Integrantes del equipo
+### Equipo de desarollo
 
 [![Autor](https://img.shields.io/badge/github-Esther%20Fernández-yellow?style=for-the-badge&logo=github)](https://github.com/GitTher)  
 
@@ -20,7 +20,7 @@
 
 [![Autor](https://img.shields.io/badge/github-Paula%20Perera-black?style=for-the-badge&logo=github)](https://github.com/PaulaEPR)
 
-### **Tecnologías utilizadas**
+### Stack tecnológico
 
 - HTML
 - Preprocesador de CSS: SASS con sintaxis SCSS
