@@ -10,17 +10,12 @@
   margin: 20px 0 20px 0;
   display: flex;
   justify-content: center;
-}
 
-@media all and (min-width: 768px) {
-  .image_header {
+  @include tablet {
     transform: translate(-30%);
     padding: 15px 0 15px 0;
   }
-}
-
-@media all and (min-width: 1200px) {
-  .image_header {
+  @include desktop {
     transform: translate(-40%);
     padding: 15px 0 15px 0;
   }
