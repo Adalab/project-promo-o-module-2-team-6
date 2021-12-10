@@ -4,7 +4,6 @@
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
 }
 .card__preview {
-  box-sizing: border-box;
   .preview__reset {
     display: flex;
     flex-direction: row;
@@ -20,7 +19,6 @@
 
     &--icon {
       order: -1;
-      // margin: 5px auto 5px 10px;
       color: #54585a;
       font-size: 12px;
     }
@@ -34,18 +32,21 @@
   background-color: #fff;
   box-shadow: 0 1px 10px 0 var(--black-20), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   .preview__text {
-    margin-left: 20px;
     font-family: $font-card-title;
+    outline: 1px solid red;
+    border-left: solid 5px #438792;
     &--name {
+      margin-left: 20px;
       font-weight: 700;
       color: $text-index-subtitle;
       padding-top: 21px;
       padding-bottom: 4px;
-      &--role {
-        font-weight: 400;
-        color: $text-icon;
-        margin-top: 4px;
-      }
+    }
+    &--role {
+      margin-left: 20px;
+      font-weight: 400;
+      color: $text-icon;
+      margin-top: 4px;
     }
   }
   .preview__image {
