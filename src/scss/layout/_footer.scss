@@ -2,40 +2,42 @@
   background-color: $text-button;
   font-family: $font-index-subtitle;
   font-size: 14px;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding-top: 20px;
   border-top: 1px solid #b8b8b9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 110px;
 
   @include tablet {
-    @media (min-width: 768px) {
-      display: flex;
-      justify-content: space-around;
-    }
+    justify-content: space-between;
+    flex-direction: row;
+    height: 60px;
+    padding-top: 5px;;
   }
 
   &__copy {
-    display: flex;
-    justify-content: center;
     font-size: 14px;
     opacity: 0.5;
     color: $copy-text;
+    @include tablet{
+      margin-left: 40px;
+    }
   }
 
   &__logo {
-    margin-top: 30px;
-    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    align-self: center;
 
     .img {
-      width: 115px;
-      height: 45px;
-      display: block;
-      margin-left: 90px;
-    }
-    
-    @include tablet {
-      @media (min-width: 768px) {
-        display: flex;
-        justify-content: flex-end;
+      width: 103px;
+      height: 40px;
+      margin-bottom: 10px;
+
+      @include tablet {
+        margin-bottom: 20px;
+        margin-right: 40px;
       }
     }
   }
