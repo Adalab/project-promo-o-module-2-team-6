@@ -45,7 +45,6 @@
 /* CAJA CONTENIDO DISEÑA COMPARTE RELLENA*/
 .icons {
   width: 268px;
-  height: 73.8px;
   display: flex;
   justify-content: center;
   border: solid $text-index-title 1.6px;
@@ -54,7 +53,7 @@
   padding: 15px 5px 5px 5px;
   @include tablet {
     width: 325px;
-    height: 86px;
+    height: 100px;
   }
 
   &__content {
@@ -167,5 +166,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
