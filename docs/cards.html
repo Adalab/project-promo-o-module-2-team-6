@@ -1,63 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="#" />
-  </head>
 
-  <body>
-      
-      <form action="#" method="get" class="form">
-  <fieldset class="form__fill">
-    <legend class="form__title">Rellena</legend>
-    <label for="fullname" class="form__label">Nombre Completo</label>
-    <input
-      type="text"
-      id="fullname"
-      name="fullname"
-      placeholder="Ej:Sally Jill"
-    />
-    <label for="job" class="form__label">Puesto</label>
-    <input type="text" id="job" name="job" placeholder="Ej: Front-end unicorn" />
-    <label for="profilepicture" class="form__label">Imagen de perfil</label>
-    <label for="email" class="form__label">Email</label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="Ej: sally-hill@gmail.com"
-    />
-    <label for="phone" class="form__label">Teléfono</label>
-    <input type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55-55" />
-    <label for="linkedin" class="form__label">Linkedin</label>
-    <input
-      type="text"
-      id="linkedin"
-      name="linkedin"
-      placeholder="Ej: linkedin.com/in/sally.hill"
-    />
-    <label for="github" class="form__label">Github</label>
-    <input type="text" id="github" name="github" placeholder="Ej: @sally-hill" />
-  </fieldset>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Montserrat:wght@400;700&family=Open+Sans:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.svg" />
+  <title>Create your card</title>
+</head>
 
-</form>
+</html>
 
 
-      <footer class="footer">
+<body>
+  <header class="header">
+      <img class="image_header" src="./assets/images/Tarjetas-molonas.svg" alt="tarjetas">
+  </header>
+  <section class="section__cards">
+    <div class="card__preview">
+      <button class="preview__reset" type="reset">
+        <p class="preview__reset--text">Reset</p>
+        <i class="far fa-trash-alt preview__reset--icon"></i>
+      </button>
 
-          <div class="footer__container">
-              <section class="footer__copy">
-                  Awesome profile-cards &copy; 2021
-              </section>
-          </div>
-          <section class="footer__logo">
-              <img class="img" src="./assets/images/logo-adalab.png" alt="Logo Adalab">
-          </section>
-      </footer>
+      <div class="card__preview--default">
+        <div class="preview__text">
+          <h3 class="preview__text--name js-preview-name">Nombre Apellido</h3>
+          <h4 class="preview__text--role js-preview-job">Front-End Developer</h4>
+        </div>
+        <div class="preview__image"></div>
+        <div class="preview__links">
+          <a
+            href="#"
+            class="preview__links--social js-preview-phone"
+            title="Phone"
+            ><i class="fas fa-mobile-alt preview__links--icon"></i>
+          </a>
+          <a
+            href="#"
+            class="preview__links--social js-preview-email"
+            title="Email"
+            ><i class="far fa-envelope preview__links--icon"></i>
+          </a>
+          <a
+            href="#"
+            class="preview__links--social js-preview-linkedin"
+            title="Linkedin"
+            ><i class="fab fa-linkedin-in preview__links--icon"></i>
+          </a>
+          <a
+            href="#"
+            class="preview__links--social js-preview-github"
+            title="GitHub"
+            ><i class="fab fa-github-alt preview__links--icon"></i>
+          </a>
+        </div>
+      </div>
     </div>
-    <!-- <script src="./assets/js/main.js"></script> -->
-  </body>
+  </section>
+  <form action="#" method="get" class="form">
+    <fieldset class="form__design">
+      <legend class="form__title js-design__title">
+        <ul>
+          <i class="form__title--icon icon-light far fa-object-ungroup"></i>
+        </ul>
+        <h2 class="form__title--text">Diseña</h2>
+        <ul>
+          <i class="form__title--chevron icon-medium far fa-chevron-up"></i>
+        </ul>
+      </legend>
+      <div class="form__design--wrapper">
+        <label for="chooseColor" class="form__label form__label--color"
+          >Colores</label
+        >
+        <div class="form__input--wrapper">
+          <div class="form__radio--color--wrapper">
+            <input
+              class="form__radio"
+              type="radio"
+              name="chooseColor"
+              id="chooseColor"
+              value="color1"
+            />
+            <div class="form__radio--color--palette">
+              <div class="form__radio--color colorA1"></div>
+              <div class="form__radio--color colorB1"></div>
+              <div class="form__radio--color colorC1"></div>
+            </div>
+          </div>
+
+          <div class="form__radio--color--wrapper">
+            <input
+              class="form__radio"
+              type="radio"
+              name="chooseColor"
+              id="chooseColor"
+              value="color2"
+            />
+            <div class="form__radio--color--palette">
+              <div class="form__radio--color colorA2"></div>
+              <div class="form__radio--color colorB2"></div>
+              <div class="form__radio--color colorC2"></div>
+            </div>
+          </div>
+
+          <div class="form__radio--color--wrapper">
+            <input
+              class="form__radio"
+              type="radio"
+              name="chooseColor"
+              id="chooseColor"
+              value="color3"
+            />
+            <div class="form__radio--color--palette">
+              <div class="form__radio--color colorA3"></div>
+              <div class="form__radio--color colorB3"></div>
+              <div class="form__radio--color colorC3"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="form__fill collapsed">
+      <legend class="form__title js-fill__title">
+        <i class="form__title--icon far fa-keyboard"></i>
+        <h2 class="form__title--text">Rellena</h2>
+        <i class="form__title--chevron icon-medium far fa-chevron-up"></i>
+      </legend>
+      <div class="form__fill--wrapper">
+        <label for="fullname" class="form__label">Nombre Completo</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Ej:Sally Jill"
+          pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"
+          class="form__input js-name"
+          required
+        />
+        <label for="job" class="form__label">Puesto</label>
+        <input
+          type="text"
+          id="job"
+          name="job"
+          placeholder="Ej: Front-end unicorn"
+          pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"
+          class="form__input js-job"
+          required
+        />
+        <label for="profilepicture" class="form__label">Imagen de perfil</label>
+        <label for="email" class="form__label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Ej: sally-hill@gmail.com"
+          class="form__input js-email"
+          required
+        />
+        <label for="phone" class="form__label">Teléfono</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Ej: 555-55-55-55"
+          class="form__input js-phone"
+          required
+        />
+        <label for="linkedin" class="form__label">Linkedin</label>
+        <input
+          type="text"
+          id="linkedin"
+          name="linkedin"
+          placeholder="Ej: linkedin.com/in/sally.hill"
+          class="form__input js-linkedin"
+          required
+        />
+        <label for="github" class="form__label">Github</label>
+        <input
+          type="text"
+          id="github"
+          name="github"
+          placeholder="Ej: @sally-hill"
+          class="form__input js-github"
+          required
+        />
+      </div>
+    </fieldset>
+
+    <fieldset class="form__share collapsed">
+      <legend class="form__title js-share__title">
+        <i class="form__title--icon fas fa-share-alt"></i>
+        <h2 class="form__title--text">Comparte</h2>
+        <i class="form__title--chevron icon-medium far fa-chevron-up"></i>
+      </legend>
+      <button class="form__submit" type="submit">
+        <i class="form__submit--icon far fa-address-card"></i>crear tarjeta
+      </button>
+    </fieldset>
+
+  </form>
+
+
+  <footer class="footer">
+
+      <div class="footer__container">
+          <section class="footer__copy">
+              Undefined &copy; 2021
+          </section>
+      </div>
+      <section class="footer__logo">
+          <img class="img" src="./assets/images/logo-adalab.png" alt="Logo Adalab">
+      </section>
+  </footer>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>

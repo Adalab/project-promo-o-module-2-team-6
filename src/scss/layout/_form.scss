@@ -1,62 +1,83 @@
-//Revisar PAULA
+// //Revisar PAULA
 
+// .form {
+//   &__design {
+//     &--wrapper {
+//       display: flex;
+//       justify-content: space-between;
+//       padding: 22px 0 10px;
+//     }
+//   }
+//   &__title {
+//     width: 100%;
+//     padding: 10px 0;
+//     border-bottom: 1px solid black;
+//     &--icon {
+//       display: inline;
+//       font-size: 18px;
+//     }
+//     &--design {
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//   }
+//   &__label {
+//     &--color {
+//       padding-left: 19px;
+//     }
+//   }
+//   &__input {
+//     &--wrapper {
+//       display: flex;
+//       flex-direction: column;
+//     }
+//     &--color {
+//       width: 30px;
+//       height: 25px;
+//       &--wrapper {
+//         display: flex;
+//       }
+//       &--palette {
+//         display: flex;
+//         margin-bottom: 20px;
+//         margin-left: 10px;
+//       }
+//     }
+//   }
+// }
+
+//OK ESTHER
 .form {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: linear-gradient(
+    to bottom,
+    $background-index,
+    $background-header 9%
+  );
   &__design {
+    border-bottom: solid 1px $background-footer;
     &--wrapper {
       display: flex;
       justify-content: space-between;
       padding: 22px 0 10px;
     }
   }
-  &__title {
-    width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid black;
-    &--icon {
-      display: inline;
-      font-size: 18px;
-    }
-    &--design {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-  &__label {
-    &--color {
-      padding-left: 19px;
-    }
-  }
-  &__input {
-    &--wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-    &--color {
-      width: 30px;
-      height: 25px;
-      &--wrapper {
-        display: flex;
-      }
-      &--palette {
-        display: flex;
-        margin-bottom: 20px;
-        margin-left: 10px;
-      }
-    }
-  }
-}
-
-//OK ESTHER
-.form {
-  margin-left: 20px;
-  margin-right: 20px;
-
   &__fill {
     display: flex;
     flex-direction: column;
     border-bottom: solid 1px $background-footer;
+    &--wrapper {
+      padding-top: 18px;
+    }
   }
-
+  &__share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: solid 1px $background-footer;
+  }
   &__title {
     width: 100%;
     display: flex;
@@ -64,7 +85,8 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 7px;
+
     &--text {
       width: 100%;
       font-family: $font-index-subtitle;
@@ -94,6 +116,9 @@
     color: $text-index-subtitle;
     line-height: 20px;
     padding-bottom: 7px;
+    &--color {
+      text-transform: uppercase;
+    }
   }
   &__input {
     box-sizing: border-box;
@@ -108,14 +133,24 @@
       line-height: 20px;
       padding-left: 9px;
     }
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+    }
   }
-  &__share {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: solid 1px $background-footer;
+  &__radio {
+    &--color {
+      width: 30px;
+      height: 25px;
+      &--wrapper {
+        display: flex;
+      }
+      &--palette {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 10px;
+      }
+    }
   }
   &__submit {
     background-color: $text-index-title;
@@ -134,6 +169,8 @@
     line-height: 24px;
     color: $background-header;
     text-transform: uppercase;
+    margin-top: 17px;
+    margin-bottom: 30px;
 
     &--icon {
       font-size: 22px;
@@ -149,4 +186,8 @@
 .collapsed .form__fill--wrapper,
 .collapsed .form__design--wrapper {
   display: none;
+}
+
+.collapsed .form__title--chevron {
+  transform: rotate(180deg);
 }
