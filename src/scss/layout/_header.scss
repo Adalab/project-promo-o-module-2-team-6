@@ -1,22 +1,25 @@
 .header {
   background-color: $background-header;
   width: 100vw;
-  height: 111px;
+  height: 70px;
 }
 
 .image_header {
   width: 100vw;
   height: 50px;
-  margin: 20px 0 20px 0;
+  margin: 30px 0 20px 0;
   display: flex;
   justify-content: center;
 
   @include tablet {
+    width: 100vw;
+    height: 60px;
     transform: translate(-30%);
-    padding: 15px 0 15px 0;
+    margin: 15px 0 15px 0;
   }
   @include desktop {
+    width: 100vw;
+    height: 60px;
     transform: translate(-40%);
-    padding: 15px 0 15px 0;
   }
 }
