@@ -48,13 +48,14 @@
 
 //OK ESTHER
 .form {
-  padding-left: 20px;
-  padding-right: 20px;
-  background: linear-gradient(
-    to bottom,
-    $background-index,
-    $background-header 9%
-  );
+  padding: 20px;
+  width: 100%;
+  @include tablet {
+    padding-left: 0;
+  }
+  @include desktop {
+    flex: 0.5;
+  }
   &__design {
     border-bottom: solid 1px $background-footer;
     &--wrapper {
@@ -75,7 +76,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-bottom: solid 1px $background-footer;
   }
   &__title {

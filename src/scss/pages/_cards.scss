@@ -1,0 +1,12 @@
+.cards {
+  &__main {
+    &--wrapper {
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 110px 1fr 110px;
+      @include tablet {
+      grid-template-rows: 110px 1fr 60px;
+      }
+    }
+  }
+}

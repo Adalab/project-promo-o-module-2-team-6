@@ -14,7 +14,7 @@
     justify-content: space-between;
     flex-direction: row;
     height: 60px;
-    padding-top: 5px;;
+    padding: 10px 40px;
   }
 
   &__copy {
@@ -30,16 +30,13 @@
     margin-top: 20px;
     display: flex;
     align-self: center;
+    @include tablet {
+      margin: 0;
+    }
 
     .img {
       width: 103px;
       height: 40px;
-      margin-bottom: 10px;
-
-      @include tablet {
-        margin-bottom: 20px;
-        margin-right: 40px;
-      }
     }
   }
 }
