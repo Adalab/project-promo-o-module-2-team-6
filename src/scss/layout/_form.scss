@@ -115,16 +115,13 @@
     font-weight: 400;
     color: $text-index-subtitle;
     line-height: 20px;
-    padding-bottom: 7px;
-    &--color {
-      text-transform: uppercase;
-    }
   }
   &__input {
     box-sizing: border-box;
     width: 100%;
     border: solid 1px $input-border;
     height: 30px;
+    margin-top: 7px;
     margin-bottom: 20px;
     &::placeholder {
       font-family: $font-index-subtitle;
