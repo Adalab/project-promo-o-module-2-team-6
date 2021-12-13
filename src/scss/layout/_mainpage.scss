@@ -37,7 +37,7 @@
   margin-bottom: 40px;
   padding-top: 20px;
   background-color: #fff;
-  box-shadow: 0 1px 10px 0 var(--black-20), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   .preview__text {
     font-family: $font-card-title;
     border-left: solid 5px #438792;
@@ -72,13 +72,13 @@
       border-radius: 16px;
       border: solid 2px #a2deaf;
       margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &--icon {
       color: $text-index-subtitle;
       font-size: 18px;
-      text-align: center;
-      margin-top: 6px;
-      margin-left: 6px;
     }
   }
 }
