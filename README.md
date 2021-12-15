@@ -2,11 +2,11 @@
 
 # Awesome profile cards - Proyecto Módulo 2
 
-¡Hola! Este es nuestro proyecto final para el módulo 2 del bootcamp de programación front-end de Adalab en el que hemos puesto en práctica los conocimientos adquiridos durante el segundo módulo. Partiendo de un diseño dado en Zeplin y siguiendo la filosofía Agile hemos trabajado en equipo, construyendo una web en la que podréis crear tarjetas de visita personalizadas en formato online. Introduciendo vuestros datos profesionales obtendréis una vista maquetada de esa información y la podréis compartir, por ejemplo en twitter.
+¡Hola! Este es nuestro proyecto final para el módulo 2 del bootcamp de programación front-end de Adalab en el que hemos puesto en práctica los conocimientos adquiridos durante el segundo módulo, centrado en JavaScript. Partiendo de un diseño dado en Zeplin y siguiendo la filosofía Agile hemos trabajado en equipo, construyendo una web en la que podréis crear tarjetas de visita personalizadas en formato online. Introduciendo vuestros datos profesionales obtendréis una vista maquetada de esa información y la podréis compartir, por ejemplo, en twitter.
 
 ### ¿Dónde verlo?
 
-[Link a la página cuando esté subida](http://#/)
+[GitHub Pages](http://beta.adalab.es/project-promo-o-module-2-team-6/)
 
 ### Equipo de desarollo
 
@@ -29,6 +29,7 @@
     - Variables y Mixins
     - Estilos anidados
 - JavaScript
+    - Escuchar eventos del HTML y realizar cambios desde JS en el HTML y CSS
 - Control de versiones con Git a través de la terminal
 - Automatización de procesos con Gulp de NodeJS
 - Planificación del proyecto bajo el marco de trabajo Scrum
