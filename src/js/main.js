@@ -47,7 +47,6 @@ const data = {
 function handleWriteInput(event) {
   const userInput = event.target.name;
   const userValue = event.target.value;
-  renderPreview();
 
   if (userInput === 'name') {
     data.name = userValue;
@@ -62,6 +61,7 @@ function handleWriteInput(event) {
   } else if (userInput === 'github') {
     data.github = userValue;
   }
+  renderPreview();
 }
 
 function renderPreview() {
