@@ -34,13 +34,13 @@ const githubPreview = document.querySelector('.js-preview-github');
 
 /* --- All --- */
 const data = {
-  name: ' ',
-  job: ' ',
-  email: ' ',
-  phone: ' ',
-  linkedin: ' ',
-  github: ' ',
-  photo: ' ',
+  name: '',
+  job: '',
+  email: '',
+  phone: '',
+  linkedin: '',
+  github: '',
+  photo: '',
   palette: 1,
 };
 
@@ -62,7 +62,6 @@ function handleWriteInput(event) {
   } else if (userInput === 'github') {
     data.github = userValue;
   }
-
 }
 
 function renderPreview() {
@@ -72,7 +71,7 @@ function renderPreview() {
     namePreview.innerHTML = data.name;
   }
   if (data.job === '') {
-    jobPreview.innerHTML = 'Front-end developer';
+    jobPreview.innerHTML = 'Front-End developer';
   } else {
     jobPreview.innerHTML = data.job;
   }
