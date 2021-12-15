@@ -48,13 +48,14 @@
 
 //OK ESTHER
 .form {
-  padding-left: 20px;
-  padding-right: 20px;
-  background: linear-gradient(
-    to bottom,
-    $background-index,
-    $background-header 9%
-  );
+  padding: 20px;
+  width: 100%;
+  @include tablet {
+    padding-left: 0;
+  }
+  @include desktop {
+    flex: 0.5;
+  }
   &__design {
     border-bottom: solid 1px $background-footer;
     &--wrapper {
@@ -75,7 +76,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-bottom: solid 1px $background-footer;
   }
   &__title {
@@ -115,16 +116,13 @@
     font-weight: 400;
     color: $text-index-subtitle;
     line-height: 20px;
-    padding-bottom: 7px;
-    &--color {
-      text-transform: uppercase;
-    }
   }
   &__input {
     box-sizing: border-box;
     width: 100%;
     border: solid 1px $input-border;
     height: 30px;
+    margin-top: 7px;
     margin-bottom: 20px;
     &::placeholder {
       font-family: $font-index-subtitle;

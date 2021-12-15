@@ -1,11 +1,19 @@
 .section__cards {
   width: 100%;
-  height: 457px;
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  padding: 38px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    border-radius: 6px;
+  }
+  @include desktop {
+    flex: 1;
+  }
 }
 .card__preview {
-  padding-top: 38px;
-  padding-left: 45px;
+
   .preview__reset {
     display: flex;
     flex-direction: row;
@@ -19,8 +27,13 @@
     background-color: transparent;
     &--icon {
       order: -1;
-      color: #54585a;
+      color: $text-icon;
       font-size: 12px;
+    }
+    &--text {
+      font-size: 12px;
+      color: $text-icon;
+      text-transform: uppercase;
     }
   }
 }
@@ -29,10 +42,9 @@
   width: 240px;
   height: 329px;
   margin-top: 20px;
-  margin-bottom: 40px;
   padding-top: 20px;
   background-color: #fff;
-  box-shadow: 0 1px 10px 0 var(--black-20), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   .preview__text {
     font-family: $font-card-title;
     border-left: solid 5px #438792;
@@ -67,13 +79,32 @@
       border-radius: 16px;
       border: solid 2px #a2deaf;
       margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &--icon {
       color: $text-index-subtitle;
       font-size: 18px;
-      text-align: center;
-      margin-top: 6px;
-      margin-left: 6px;
+    }
+  }
+}
+
+//Responsive
+.card {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+      to bottom,
+      $background-index,
+      $background-header 9%
+    );
+    @include tablet {
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      padding: 20px 40px;
+      align-self: stretch;
     }
   }
 }
