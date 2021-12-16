@@ -14,6 +14,16 @@ function handlerClickCollapsable(event) {
     selectedChvron.classList.toggle('fa-chevron-down');
     selectedChvron.classList.toggle('fa-chevron-up');
   }
+//   if (!collapsableDesign.parentNode.classList.contains('collapsed')) {
+//     collapsableFill.parentNode.classList.add('collapsed');
+//     collapsableShare.parentNode.classList.add('collapsed');
+//   } else if (!collapsableFill.parentNode.classList.contains('collapsed')) {
+//     collapsableDesign.parentNode.classList.add('collapsed');
+//     collapsableShare.parentNode.classList.add('collapsed');
+//   } else if (!collapsableShare.parentNode.classList.contains('collapsed')) {
+//     collapsableDesign.parentNode.classList.add('collapsed');
+//     collapsableFill.parentNode.classList.add('collapsed');
+//   }
 }
 
 /* --- Collapsable Design --- */
