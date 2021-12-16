@@ -13,7 +13,6 @@
   }
 }
 .card__preview {
-
   .preview__reset {
     display: flex;
     flex-direction: row;
@@ -65,7 +64,9 @@
   .preview__image {
     width: 240px;
     height: 200px;
-    background-image: url("https://www.fillmurray.com/240/200");
+    background-image: url('https://www.fillmurray.com/240/200');
+    background-size: cover;
+    background-position: center center;
     margin-top: 10px;
   }
   .preview__links {

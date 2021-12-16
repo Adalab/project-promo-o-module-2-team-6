@@ -189,3 +189,11 @@
 .collapsed .form__title--chevron {
   transform: rotate(180deg);
 }
+.form__photothumb {
+  height: 30px;
+  width: 30px;
+  border: solid 1px black;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+}
