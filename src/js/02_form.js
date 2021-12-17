@@ -39,7 +39,7 @@ function renderPreview() {
   if (data.linkedin === '') {
     linkedinPreview.href = '';
   } else {
-    linkedinPreview.href = `https://www.linkedin.com/in/·${data.linkedin}`;
+    linkedinPreview.href = `https://www.linkedin.com/in/${data.linkedin}`;
   }
   if (data.github === '') {
     githubPreview.href = '';
