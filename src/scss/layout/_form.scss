@@ -192,8 +192,30 @@
 .form__photothumb {
   height: 30px;
   width: 30px;
-  border: solid 1px black;
-  display: block;
+  border: solid 1px $input-border;
+  margin-left: 20px;
   background-size: cover;
   background-position: center center;
+}
+
+.form__photobutton {
+  cursor: pointer;
+  background-color: $text-index-title;
+  color: $text-button;
+  font-size: 14px;
+  font-family: $font-index-subtitle;
+  padding: 3px 22px 7px 22px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  border-radius: 3px;
+  line-height: 20px;
+}
+
+.form__photosection {
+  margin-top: 7px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }
