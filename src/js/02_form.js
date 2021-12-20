@@ -70,8 +70,9 @@ function handleColorChange() {
 
   const inputRadio = document.querySelectorAll('.js-radio');
   const inputIcons = document.querySelectorAll('.js-icons');
+  const borderIcons = document.querySelectorAll('.js-border');
+  const borderText = document.querySelector('.js-borderleft');
   for (const eachRadio of inputRadio) {
-    //debugger;
     if (eachRadio.value === '1' && eachRadio.checked) {
       namePreview.classList.add('colorgreen');
       namePreview.classList.remove('colorred');
@@ -81,6 +82,14 @@ function handleColorChange() {
         eachIcon.classList.remove('colourred');
         eachIcon.classList.remove('colouryellow');
       }
+      for (const eachBorder of borderIcons) {
+        eachBorder.classList.add('bordergreen');
+        eachBorder.classList.remove('borderred');
+        eachBorder.classList.remove('borderyellow');
+      }
+      borderText.classList.add('leftgreen');
+      borderText.classList.remove('leftred');
+      borderText.classList.remove('leftyellow');
     } else if (eachRadio.value === '2' && eachRadio.checked) {
       namePreview.classList.remove('colorgreen');
       namePreview.classList.add('colorred');
@@ -90,6 +99,14 @@ function handleColorChange() {
         eachIcon.classList.add('colourred');
         eachIcon.classList.remove('colouryellow');
       }
+      for (const eachBorder of borderIcons) {
+        eachBorder.classList.remove('bordergreen');
+        eachBorder.classList.add('borderred');
+        eachBorder.classList.remove('borderyellow');
+      }
+      borderText.classList.remove('leftgreen');
+      borderText.classList.add('leftred');
+      borderText.classList.remove('leftyellow');
     } else if (eachRadio.value === '3' && eachRadio.checked) {
       namePreview.classList.remove('colorgreen');
       namePreview.classList.remove('colorred');
@@ -99,7 +116,14 @@ function handleColorChange() {
         eachIcon.classList.remove('colourred');
         eachIcon.classList.add('colouryellow');
       }
-      
+      for (const eachBorder of borderIcons) {
+        eachBorder.classList.remove('bordergreen');
+        eachBorder.classList.remove('borderred');
+        eachBorder.classList.add('borderyellow');
+      }
+      borderText.classList.remove('leftgreen');
+      borderText.classList.remove('leftred');
+      borderText.classList.add('leftyellow');
     }
   }
 }

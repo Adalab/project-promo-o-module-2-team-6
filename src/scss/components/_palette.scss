@@ -63,14 +63,17 @@ $colorC3: #a0c0cf;
 
 .preview__text .colorgreen {
   color: $colorA1;
+  
 }
 
 .preview__text .colorred {
   color: $colorA2;
+  
 }
 
 .preview__text .coloryellow {
   color: $colorA3;
+  
 }
 .preview__links--icon.js-icons.colourgreen {
   color: $colorA1;
@@ -80,4 +83,26 @@ $colorC3: #a0c0cf;
 }
 .preview__links--icon.js-icons.colouryellow {
   color: $colorA3;
+}
+
+.preview__links--social.js-border.bordergreen{
+  border: solid 2px $colorC1;
+
+}
+.preview__links--social.js-border.borderred{
+  border: solid 2px $colorC2;
+  
+}
+.preview__links--social.js-border.borderyellow{
+  border: solid 2px $colorC3;
+  
+}
+.preview__text.js-borderleft.leftgreen{
+  border-left: solid 5px $colorB1;
+}
+.preview__text.js-borderleft.leftred{
+  border-left: solid 5px $colorB2;
+}
+.preview__text.js-borderleft.leftyellow{
+  border-left: solid 5px $colorB3;
 }
