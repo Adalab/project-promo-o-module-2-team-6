@@ -4,26 +4,24 @@
 
 /* --- Función colapsar titulos formularios ---*/
 function handlerClickCollapsable(event) {
-  event.currentTarget.parentNode.classList.toggle('collapsed');
+  const formDesign = document.querySelector('.form__design');
+  const formFill = document.querySelector('.form__fill');
+  const formShare = document.querySelector('.form__share');
+  formDesign.classList.add('collapsed');
+  formFill.classList.add('collapsed');
+  formShare.classList.add('collapsed');
   const formTitleChevron = document.querySelectorAll('.form__title--chevron');
-  for (let index = 0; index < formTitleChevron.length; index++) {
-    const selectedChvron = event.currentTarget.querySelector(
-      '.form__title--chevron'
-    );
 
-    selectedChvron.classList.toggle('fa-chevron-down');
-    selectedChvron.classList.toggle('fa-chevron-up');
+  for (const eachChevron of formTitleChevron) {
+    eachChevron.classList.add('fa-chevron-down');
+    eachChevron.classList.remove('fa-chevron-up');
   }
-//   if (!collapsableDesign.parentNode.classList.contains('collapsed')) {
-//     collapsableFill.parentNode.classList.add('collapsed');
-//     collapsableShare.parentNode.classList.add('collapsed');
-//   } else if (!collapsableFill.parentNode.classList.contains('collapsed')) {
-//     collapsableDesign.parentNode.classList.add('collapsed');
-//     collapsableShare.parentNode.classList.add('collapsed');
-//   } else if (!collapsableShare.parentNode.classList.contains('collapsed')) {
-//     collapsableDesign.parentNode.classList.add('collapsed');
-//     collapsableFill.parentNode.classList.add('collapsed');
-//   }
+  const selectedChevron = event.currentTarget.querySelector(
+    '.form__title--chevron'
+  );
+  selectedChevron.classList.add('fa-chevron-up');
+  selectedChevron.classList.remove('fa-chevron-down');
+  event.currentTarget.parentNode.classList.toggle('collapsed');
 }
 
 /* --- Collapsable Design --- */
