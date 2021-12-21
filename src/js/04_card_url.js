@@ -4,12 +4,22 @@ const createButton = document.querySelector('.js-submit');
 const createLink = document.querySelector('.js-link-card');
 const createButtonTw = document.querySelector('.js-twitter');
 
-for (const eachInput of allInput) {
-  if (eachInput.value === '') {
-    createButton.disabled = true;
-  } else {
-    createButton.disabled = false;
+function handleChangeInputs() {
+  let allReqFilled = true;
+  for (const eachInput of allInput) {
+    if (eachInput.required && eachInput.value === '' && allReqFilled) {
+      allReqFilled = false;
+    }
   }
+  if (allReqFilled) {
+    createButton.disabled = false;
+  } else {
+    createButton.disabled = true;
+  }
+}
+
+for (const eachInput of allInput) {
+  eachInput.addEventListener('change', handleChangeInputs);
 }
 
 function handleCreateCard(event) {

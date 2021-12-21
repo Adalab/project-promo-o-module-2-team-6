@@ -32,10 +32,11 @@
         >Añadir imagen</label
       >
       <input
-        class="form__photoinput js__profile-upload-btn hidden"
+        class="form__photoinput js__profile-upload-btn js-input hidden"
         type="file"
         name="photo"
         id="photo"
+        required
       />
       <span class="form__photothumb js__profile-preview"></span>
     </div>
@@ -55,7 +56,6 @@
       name="phone"
       placeholder="Ej: 555-55-55-55"
       class="form__input js-phone js-input"
-      required
     />
     <label for="linkedin" class="form__label">Linkedin</label>
     <input
