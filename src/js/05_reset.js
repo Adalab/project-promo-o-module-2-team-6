@@ -14,6 +14,7 @@ function handleResetCard() {
   data.palette = 1
 
   renderPreview()
+  handleColorChange()
 
   profileImage.style.backgroundImage = "";
   profilePreview.style.backgroundImage = "";
