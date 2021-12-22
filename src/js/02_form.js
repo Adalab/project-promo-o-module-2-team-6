@@ -20,6 +20,12 @@ function handleWriteInput(event) {
   renderPreview();
 }
 
+function handleWriteRadio(event) {
+  const userInput = event.target.name;
+  const userValue = event.target.value;
+  data.palette = parseInt(userValue);
+}
+
 function renderPreview() {
   if (data.name === '') {
     namePreview.innerHTML = 'Nombre Apellido';
@@ -57,6 +63,10 @@ for (const eachInput of allInput) {
   eachInput.addEventListener('keyup', handleWriteInput);
 }
 
+for (const eachRadio of allRadio) {
+  eachRadio.addEventListener('click', handleWriteRadio);
+}
+
 // COLORES
 //Declarar variables:
 
@@ -65,9 +75,6 @@ const inputColors = document.querySelectorAll('.js-palette');
 //Funciones:
 
 function handleColorChange() {
-  //const userInput = event.target.name;
-  //const userValue = event.currentTarget.value;
-
   const inputRadio = document.querySelectorAll('.js-radio');
   const inputIcons = document.querySelectorAll('.js-icons');
   const borderIcons = document.querySelectorAll('.js-border');

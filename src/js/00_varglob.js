@@ -5,6 +5,7 @@
 
 /* --- Input variables --- */
 const allInput = document.querySelectorAll('.js-input');
+const allRadio = document.querySelectorAll('.js-radio');
 
 /* --- Preview variables --- */
 const namePreview = document.querySelector('.js-preview-name');

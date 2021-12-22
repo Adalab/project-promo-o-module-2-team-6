@@ -32,9 +32,7 @@ function handleCreateCard(event) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       createLink.innerHTML = `<h3 class="form__card--title">La tarjeta ha sido creada:</h3> <a class="form__card--link" href="${data.cardURL}"target="_blank" title="URL card">${data.cardURL}</a>`;
-      console.log(data.cardURL);
       createButtonTw.innerHTML = `<a class="form__twitter--link" href="https://twitter.com/intent/tweet?text=¡Hola!%20Mira%20mi%20tarjeta%20de%20presentación%20de%20Awesome%20Cards%20&url=${data.cardURL}" target="_blank" title="twitter"><i class="form__twitter--icon fab fa-twitter"></i>Compartir en twitter</a>`;
     });
 }
