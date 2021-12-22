@@ -36,7 +36,7 @@ function handleCreateCard(event) {
       createLink.href = data.cardURL;
       createLink.innerHTML = data.cardURL;
       console.log(data.cardURL);
-      // createButtonTw.innerHTML = `<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="¡Hola! Esta es mi tarjeta de presentación :)" data-url="https://stackoverflow.com/questions/61216973/how-to-close-collapsible-div-when-opening-new-one" data-hashtags="CardsAwesome" data-lang="es" data-show-count="false">Tweetearaaaa</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`;
+      createButtonTw.innerHTML = `<a href="https://twitter.com/intent/tweet?text=¡Hola!%20Mira%20mi%20tarjeta%20de%20presentación%20de%20Awesome%20Cards%20&url=${data.cardURL}" target="_blank" title="twitter">Compartir en twitter</a>`;
     });
 }
 
