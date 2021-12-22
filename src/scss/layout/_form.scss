@@ -1,52 +1,3 @@
-// //Revisar PAULA
-
-// .form {
-//   &__design {
-//     &--wrapper {
-//       display: flex;
-//       justify-content: space-between;
-//       padding: 22px 0 10px;
-//     }
-//   }
-//   &__title {
-//     width: 100%;
-//     padding: 10px 0;
-//     border-bottom: 1px solid black;
-//     &--icon {
-//       display: inline;
-//       font-size: 18px;
-//     }
-//     &--design {
-//       display: flex;
-//       justify-content: space-between;
-//     }
-//   }
-//   &__label {
-//     &--color {
-//       padding-left: 19px;
-//     }
-//   }
-//   &__input {
-//     &--wrapper {
-//       display: flex;
-//       flex-direction: column;
-//     }
-//     &--color {
-//       width: 30px;
-//       height: 25px;
-//       &--wrapper {
-//         display: flex;
-//       }
-//       &--palette {
-//         display: flex;
-//         margin-bottom: 20px;
-//         margin-left: 10px;
-//       }
-//     }
-//   }
-// }
-
-//OK ESTHER
 .form {
   padding: 20px;
   width: 100%;
@@ -73,12 +24,19 @@
     }
   }
   &__share {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
     border-bottom: solid 1px $background-footer;
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
+
   &__title {
     width: 100%;
     display: flex;
@@ -178,6 +136,55 @@
       font-size: 22px;
       color: $background-header;
       line-height: 24px;
+    }
+  }
+  &__card {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--title {
+      width: 100%;
+      border-top: solid 1px $background-footer;
+      font-family: $font-index-subtitle;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      color: $text-icon;
+      padding-top: 20px;
+      margin-bottom: 5px;
+      line-height: 24px;
+    }
+    &--link {
+      font-family: $font-index-subtitle;
+      color: $text-index-title;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+  &__twitter {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    &--link {
+      background-color: $twitter-button;
+      padding: 6px 9px 6px 11px;
+      font-size: 14px;
+      font-family: $font-index-subtitle;
+      color: $background-header;
+      line-height: 18px;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    }
+    &--icon {
+      font-size: 18px;
+      color: $background-header;
+      margin-right: 10px;
     }
   }
 }

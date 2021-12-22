@@ -22,52 +22,52 @@
 <body>
   <main class="cards__main--wrapper">
     <header class="header">
-        <img class="image_header" src="./assets/images/Tarjetas-molonas.svg" alt="tarjetas">
+       <a href="./index.html"><img class="image_header" src="./assets/images/Tarjetas-molonas.svg" alt="tarjetas"></a>
     </header>
     <section class="card__wrapper">
-      <section class="section__cards">
+      <section class="section__cards ">
         <div class="card__preview">
-          <button class="preview__reset" type="reset">
+          <button class="preview__reset js-reset" type="reset">
             <p class="preview__reset--text">Reset</p>
             <i class="far fa-trash-alt preview__reset--icon"></i>
           </button>
       
           <div class="card__preview--default">
-            <div class="preview__text">
+            <div class="preview__text js-borderleft">
               <h3 class="preview__text--name js-preview-name">Nombre Apellido</h3>
               <h4 class="preview__text--role js-preview-job">Front-End Developer</h4>
             </div>
-            <div class="preview__image"></div>
+            <div class="preview__image js__profile-image"></div>
             <div class="preview__links">
               <a
                 href="#"
-                class="preview__links--social js-preview-phone"
+                class="preview__links--social js-preview-phone js-border"
                 title="Phone"
-                ><i class="fas fa-mobile-alt preview__links--icon"></i>
+                ><i class="fas fa-mobile-alt preview__links--icon js-icons"></i>
               </a>
               <a
                 href="#"
-                class="preview__links--social js-preview-email"
+                class="preview__links--social js-preview-email js-border"
                 title="Email"
-                ><i class="far fa-envelope preview__links--icon"></i>
+                ><i class="far fa-envelope preview__links--icon js-icons"></i>
               </a>
               <a
                 href="#"
-                class="preview__links--social js-preview-linkedin"
+                class="preview__links--social js-preview-linkedin js-border"
                 title="Linkedin"
-                ><i class="fab fa-linkedin-in preview__links--icon"></i>
+                ><i class="fab fa-linkedin-in preview__links--icon js-icons"></i>
               </a>
               <a
                 href="#"
-                class="preview__links--social js-preview-github"
+                class="preview__links--social js-preview-github js-border"
                 title="GitHub"
-                ><i class="fab fa-github-alt preview__links--icon"></i>
+                ><i class="fab fa-github-alt preview__links--icon js-icons"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
-      <form action="#" method="get" class="form">
+      <form action="#" method="get" class="form js-form">
         <fieldset class="form__design">
           <legend class="form__title js-design__title">
             <ul>
@@ -83,13 +83,14 @@
               >Colores</label
             >
             <div class="form__input--wrapper">
-              <div class="form__radio--color--wrapper">
+              <div class="form__radio--color--wrapper js-palette">
                 <input
-                  class="form__radio"
+                  class="form__radio js-radio"
                   type="radio"
                   name="chooseColor"
                   id="chooseColor"
-                  value="color1"
+                  value="1"
+                  checked
                 />
                 <div class="form__radio--color--palette">
                   <div class="form__radio--color colorA1"></div>
@@ -98,13 +99,14 @@
                 </div>
               </div>
 
-              <div class="form__radio--color--wrapper">
+              <div class="form__radio--color--wrapper js-palette">
                 <input
-                  class="form__radio"
+                  class="form__radio js-radio"
                   type="radio"
                   name="chooseColor"
                   id="chooseColor"
-                  value="color2"
+                  value="2"
+                  
                 />
                 <div class="form__radio--color--palette">
                   <div class="form__radio--color colorA2"></div>
@@ -113,13 +115,14 @@
                 </div>
               </div>
 
-              <div class="form__radio--color--wrapper">
+              <div class="form__radio--color--wrapper js-palette">
                 <input
-                  class="form__radio"
+                  class="form__radio js-radio"
                   type="radio"
                   name="chooseColor"
                   id="chooseColor"
-                  value="color3"
+                  value="3"
+                  
                 />
                 <div class="form__radio--color--palette">
                   <div class="form__radio--color colorA3"></div>
@@ -136,17 +139,17 @@
           <legend class="form__title js-fill__title">
             <i class="form__title--icon far fa-keyboard"></i>
             <h2 class="form__title--text">Rellena</h2>
-            <i class="form__title--chevron icon-medium far fa-chevron-up"></i>
+            <i class="form__title--chevron icon-medium far fa-chevron-down"></i>
           </legend>
           <div class="form__fill--wrapper">
             <label for="fullname" class="form__label">Nombre Completo</label>
             <input
               type="text"
-              id="fullname"
-              name="fullname"
+              id="name"
+              name="name"
               placeholder="Ej:Sally Jill"
               pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"
-              class="form__input js-name"
+              class="form__input js-name js-input"
               required
             />
             <label for="job" class="form__label">Puesto</label>
@@ -156,17 +159,31 @@
               name="job"
               placeholder="Ej: Front-end unicorn"
               pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"
-              class="form__input js-job"
+              class="form__input js-job js-input"
               required
             />
             <label for="profilepicture" class="form__label">Imagen de perfil</label>
+
+            <div class="form__photosection">
+              <label for="photo" class="form__photobutton js__profile-trigger"
+                >Añadir imagen</label
+              >
+              <input
+                class="form__photoinput js__profile-upload-btn js-input hidden"
+                type="file"
+                name="photo"
+                id="photo"
+                required
+              />
+              <span class="form__photothumb js__profile-preview"></span>
+            </div>
             <label for="email" class="form__label">Email</label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="Ej: sally-hill@gmail.com"
-              class="form__input js-email"
+              class="form__input js-email js-input"
               required
             />
             <label for="phone" class="form__label">Teléfono</label>
@@ -175,8 +192,7 @@
               id="phone"
               name="phone"
               placeholder="Ej: 555-55-55-55"
-              class="form__input js-phone"
-              required
+              class="form__input js-phone js-input"
             />
             <label for="linkedin" class="form__label">Linkedin</label>
             <input
@@ -184,7 +200,7 @@
               id="linkedin"
               name="linkedin"
               placeholder="Ej: linkedin.com/in/sally.hill"
-              class="form__input js-linkedin"
+              class="form__input js-linkedin js-input"
               required
             />
             <label for="github" class="form__label">Github</label>
@@ -193,7 +209,7 @@
               id="github"
               name="github"
               placeholder="Ej: @sally-hill"
-              class="form__input js-github"
+              class="form__input js-github js-input"
               required
             />
           </div>
@@ -203,11 +219,15 @@
           <legend class="form__title js-share__title">
             <i class="form__title--icon fas fa-share-alt"></i>
             <h2 class="form__title--text">Comparte</h2>
-            <i class="form__title--chevron icon-medium far fa-chevron-up"></i>
+            <i class="form__title--chevron icon-medium far fa-chevron-down"></i>
           </legend>
-          <button class="form__submit" type="submit">
-            <i class="form__submit--icon far fa-address-card"></i>crear tarjeta
-          </button>
+          <div class="form__share--wrapper">
+            <button class="form__submit js-submit" type="submit" disabled>
+              <i class="form__submit--icon far fa-address-card"></i>crear tarjeta
+            </button>
+            <div class="js-link-card form__card"></div>
+            <div class="js-twitter form__twitter"></div>
+          </div>
         </fieldset>
 
       </form>
