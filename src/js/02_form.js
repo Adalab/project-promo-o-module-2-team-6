@@ -19,6 +19,7 @@ function handleWriteInput(event) {
   }
   renderPreview();
   handleResetShare();
+
 }
 
 function handleWriteRadio(event) {
