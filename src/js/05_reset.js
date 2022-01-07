@@ -13,11 +13,13 @@ function handleResetCard() {
   data.photo = ""
   data.palette = 1
 
-  renderPreview()
-  handleColorChange()
+  renderPreview();
+  handleColorChange();
 
   profileImage.style.backgroundImage = "";
   profilePreview.style.backgroundImage = "";
+
+  createButton.disabled = true;
 }
 
 resetButton.addEventListener("click", handleResetCard);
