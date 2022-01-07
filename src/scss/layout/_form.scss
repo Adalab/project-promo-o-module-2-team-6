@@ -184,6 +184,18 @@
   }
 }
 
+.required {
+  color: red;
+}
+
+.warning {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #114e4e;
+  line-height: 20px;
+}
+
 // JAVASCRIPT
 
 .collapsed .form__share--wrapper,
