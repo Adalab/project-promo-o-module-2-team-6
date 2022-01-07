@@ -20,10 +20,10 @@ function handleResetCard() {
   profilePreview.style.backgroundImage = "";
 
   handleResetShare();
+  createButton.disabled = true;
 }
 
 function handleResetShare() {
-  createButton.disabled = true;
   createLink.innerHTML = '';
   createButtonTw.innerHTML = '';
 }

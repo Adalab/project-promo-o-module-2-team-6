@@ -18,12 +18,14 @@ function handleWriteInput(event) {
     data.github = userValue;
   }
   renderPreview();
+  handleResetShare();
 }
 
 function handleWriteRadio(event) {
   const userInput = event.target.name;
   const userValue = event.target.value;
   data.palette = parseInt(userValue);
+  handleResetShare();
 }
 
 function renderPreview() {
