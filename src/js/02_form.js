@@ -1,5 +1,19 @@
 'use strict';
 
+//Local storage
+const getFromLocalStorage = () => {
+  const localStorageData = localStorage.getItem('userData');
+  if (localStorageData !== null) {
+    data = JSON.parse(localStorageData);
+    renderPreview();
+  }
+};
+
+const setInLocalStorage = () => {
+  const stringifyForm = JSON.stringify(data); 
+  localStorage.setItem('userData', stringifyForm);
+};
+
 function handleWriteInput(event) {
   const userInput = event.target.name;
   const userValue = event.target.value;
@@ -19,6 +33,7 @@ function handleWriteInput(event) {
   }
   renderPreview();
   handleResetShare();
+  setInLocalStorage();
 
 }
 
@@ -142,3 +157,5 @@ function handleColorChange() {
 for (const eachColors of inputColors) {
   eachColors.addEventListener('click', handleColorChange);
 }
+
+getFromLocalStorage();

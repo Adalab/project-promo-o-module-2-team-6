@@ -16,7 +16,7 @@ const linkedinPreview = document.querySelector('.js-preview-linkedin');
 const githubPreview = document.querySelector('.js-preview-github');
 
 /* --- All --- */
-const data = {
+let data = {
   name: '',
   job: '',
   email: '',
