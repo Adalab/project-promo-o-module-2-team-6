@@ -18,6 +18,8 @@ function handleChangeInputs() {
   }
 }
 
+
+
 for (const eachInput of allInput) {
   eachInput.addEventListener('change', handleChangeInputs);
 }
