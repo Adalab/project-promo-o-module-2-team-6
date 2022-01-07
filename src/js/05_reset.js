@@ -20,6 +20,8 @@ function handleResetCard() {
   profilePreview.style.backgroundImage = "";
 
   createButton.disabled = true;
+  createLink.innerHTML = '';
+  createButtonTw.innerHTML = '';
 }
 
 resetButton.addEventListener("click", handleResetCard);
