@@ -18,6 +18,16 @@ function handleChangeInputs() {
   } else {
     createButton.disabled = true;
   }
+  showErrorMesage(allReqFilled);
+}
+
+function showErrorMesage(allFilled) {
+  if (allFilled) {
+    textError.innerHTML = '';
+  } else {
+    textError.innerHTML =
+      'Rellena todos los campos obligatorios para poder crear la tarjeta';
+  }
 }
 
 for (const eachInput of allInput) {
