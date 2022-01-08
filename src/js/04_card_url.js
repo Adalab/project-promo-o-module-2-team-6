@@ -24,7 +24,7 @@ function showErrorMesage(allFilled) {
     textError.innerHTML = '';
   } else {
     textError.innerHTML =
-      'Tienes que rellenar los campos obligatorios para crear la tarjeta';
+      'Rellena todos los campos obligatorios para poder crear la tarjeta';
   }
 }
 
