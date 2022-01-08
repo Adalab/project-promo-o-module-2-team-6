@@ -33,6 +33,7 @@ const deleteFromLocalStorage = () => {
   localStorage.removeItem('userData');
 };
 
+//Handler Input & Radio
 function handleWriteInput(event) {
   const userInput = event.target.name;
   const userValue = event.target.value;
@@ -49,37 +50,32 @@ function handleWriteRadio(event) {
   setInLocalStorage();
 }
 
+//Render functions
+function renderItemText(objectProperty, where, defaultText) {
+  if (objectProperty === '') {
+    where.innerHTML = defaultText;
+  } else {
+    where.innerHTML = objectProperty;
+  }
+}
+
+function renderItemLink(objectProperty, where, link) {
+  if (objectProperty === '') {
+    where.href = '#';
+    where.target = '_self';
+  } else {
+    where.href = link;
+    where.target = '_blank';
+  }
+}
+
 function renderPreview() {
-  if (data.name === '') {
-    namePreview.innerHTML = 'Nombre Apellido';
-  } else {
-    namePreview.innerHTML = data.name;
-  }
-  if (data.job === '') {
-    jobPreview.innerHTML = 'Front-End developer';
-  } else {
-    jobPreview.innerHTML = data.job;
-  }
-  if (data.email === '') {
-    emailPreview.href = '';
-  } else {
-    emailPreview.href = `mailto:${data.email}`;
-  }
-  if (data.linkedin === '') {
-    linkedinPreview.href = '';
-  } else {
-    linkedinPreview.href = `https://www.linkedin.com/in/${data.linkedin}`;
-  }
-  if (data.github === '') {
-    githubPreview.href = '';
-  } else {
-    githubPreview.href = `https://github.com/${data.github}`;
-  }
-  if (data.phone === '') {
-    phonePreview.href = '';
-  } else {
-    phonePreview.href = `tel:${data.phone}`;
-  }
+  renderItemText(data.name, namePreview, 'Nombre Apellido');
+  renderItemText(data.job, jobPreview, 'Front-End developer');
+  renderItemLink(data.email, emailPreview, `mailto:${data.email}`);
+  renderItemLink(data.linkedin, linkedinPreview, `https://www.linkedin.com/in/${data.linkedin}`);
+  renderItemLink(data.github, githubPreview, `https://github.com/${data.github}`);
+  renderItemLink(data.phone, phonePreview, `tel:${data.phone}`);
 }
 
 for (const eachInput of allInput) {
