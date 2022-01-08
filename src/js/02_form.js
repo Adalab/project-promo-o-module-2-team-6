@@ -1,29 +1,50 @@
 'use strict';
 
+//Local storage
+const getFromLocalStorage = () => {
+  const localStorageData = localStorage.getItem('userData');
+  if (localStorageData !== null) {
+    data = JSON.parse(localStorageData);
+    autoCompleteInputs();
+    renderPreview();
+    handleColorChange();
+  }
+};
+
+function autoCompleteInputs() {
+  for (const eachInput of allInput) {
+    eachInput.value = data[eachInput.name];
+  }
+  for (const eachRadio of allRadio) {
+    if (eachRadio.id === `chooseColor${parseInt(data.palette)}`) {
+      eachRadio.checked =  true;
+    }
+  }
+}
+
+const setInLocalStorage = () => {
+  const stringifyForm = JSON.stringify(data);
+  localStorage.setItem('userData', stringifyForm);
+};
+
+const deleteFromLocalStorage = () => {
+  localStorage.removeItem('userData');
+};
+
 function handleWriteInput(event) {
   const userInput = event.target.name;
   const userValue = event.target.value;
-
-  if (userInput === 'name') {
-    data.name = userValue;
-  } else if (userInput === 'job') {
-    data.job = userValue;
-  } else if (userInput === 'email') {
-    data.email = userValue;
-  } else if (userInput === 'phone') {
-    data.phone = userValue;
-  } else if (userInput === 'linkedin') {
-    data.linkedin = userValue;
-  } else if (userInput === 'github') {
-    data.github = userValue;
-  }
+  data[userInput] = userValue;
   renderPreview();
+  handleResetShare();
+  setInLocalStorage();
 }
 
 function handleWriteRadio(event) {
-  const userInput = event.target.name;
   const userValue = event.target.value;
   data.palette = parseInt(userValue);
+  handleResetShare();
+  setInLocalStorage();
 }
 
 function renderPreview() {
@@ -139,3 +160,5 @@ function handleColorChange() {
 for (const eachColors of inputColors) {
   eachColors.addEventListener('click', handleColorChange);
 }
+
+getFromLocalStorage();
