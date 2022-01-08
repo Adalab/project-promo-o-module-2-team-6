@@ -16,9 +16,17 @@ function handleChangeInputs() {
   } else {
     createButton.disabled = true;
   }
+  showErrorMesage(allReqFilled);
 }
 
-
+function showErrorMesage(allFilled) {
+  if (allFilled) {
+    textError.innerHTML = '';
+  } else {
+    textError.innerHTML =
+      'Tienes que rellenar los campos obligatorios para crear la tarjeta';
+  }
+}
 
 for (const eachInput of allInput) {
   eachInput.addEventListener('change', handleChangeInputs);

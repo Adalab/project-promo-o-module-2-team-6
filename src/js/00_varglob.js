@@ -14,7 +14,7 @@ const emailPreview = document.querySelector('.js-preview-email');
 const phonePreview = document.querySelector('.js-preview-phone');
 const linkedinPreview = document.querySelector('.js-preview-linkedin');
 const githubPreview = document.querySelector('.js-preview-github');
-
+const textError = document.querySelector('.js-text-error');
 
 /* --- All --- */
 const data = {
