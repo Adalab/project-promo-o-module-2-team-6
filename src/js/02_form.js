@@ -11,6 +11,7 @@ const getFromLocalStorage = () => {
     autoCompleteInputs();
     renderPreview();
     handleColorChange();
+    handleChangeInputs();
   }
 };
 
@@ -19,7 +20,9 @@ function autoCompleteInputs() {
     eachInput.value = data[eachInput.name];
   }
   for (const eachRadio of allRadio) {
-    if (eachRadio.value === data.palette) {
+    const valueRadio = parseInt(eachRadio.value);
+    const valueRadioLS = parseInt(data.palette);
+    if (valueRadio === valueRadioLS) {
       eachRadio.checked =  true;
     }
   }
