@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Montserrat:wght@400;700&family=Open+Sans:wght@300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600;900&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link rel="icon" href="./assets/images/favicon.svg" />
@@ -22,20 +22,25 @@
 <body>
   <main class="cards__main--wrapper">
     <header class="header">
-       <a href="./index.html"><img class="image_header" src="./assets/images/Tarjetas-molonas.svg" alt="tarjetas"></a>
+       <a href="./index.html"><img class="image_header" src="./assets/images/dont-be-undefined-logo.svg" alt="tarjetas"></a>
     </header>
     <section class="card__wrapper">
-      <section class="section__cards ">
+      <section class="section__cards">
         <div class="card__preview">
-          <button class="preview__reset js-reset" type="reset">
+          <button
+            style="cursor: pointer"
+            class="preview__reset js-reset"
+            type="reset"
+          >
             <p class="preview__reset--text">Reset</p>
             <i class="far fa-trash-alt preview__reset--icon"></i>
           </button>
-      
           <div class="card__preview--default">
             <div class="preview__text js-borderleft">
               <h3 class="preview__text--name js-preview-name">Nombre Apellido</h3>
-              <h4 class="preview__text--role js-preview-job">Front-End Developer</h4>
+              <h4 class="preview__text--role js-preview-job">
+                Front-End Developer
+              </h4>
             </div>
             <div class="preview__image js__profile-image"></div>
             <div class="preview__links">
@@ -43,24 +48,28 @@
                 href="#"
                 class="preview__links--social js-preview-phone js-border"
                 title="Phone"
+                target="_self"
                 ><i class="fas fa-mobile-alt preview__links--icon js-icons"></i>
               </a>
               <a
                 href="#"
                 class="preview__links--social js-preview-email js-border"
                 title="Email"
+                target="_self"
                 ><i class="far fa-envelope preview__links--icon js-icons"></i>
               </a>
               <a
                 href="#"
                 class="preview__links--social js-preview-linkedin js-border"
                 title="Linkedin"
+                target="_self"
                 ><i class="fab fa-linkedin-in preview__links--icon js-icons"></i>
               </a>
               <a
                 href="#"
                 class="preview__links--social js-preview-github js-border"
                 title="GitHub"
+                target="_self"
                 ><i class="fab fa-github-alt preview__links--icon js-icons"></i>
               </a>
             </div>
@@ -88,9 +97,10 @@
                   class="form__radio js-radio"
                   type="radio"
                   name="chooseColor"
-                  id="chooseColor"
+                  id="chooseColor1"
                   value="1"
                   checked
+                  style="cursor: pointer"
                 />
                 <div class="form__radio--color--palette">
                   <div class="form__radio--color colorA1"></div>
@@ -104,9 +114,10 @@
                   class="form__radio js-radio"
                   type="radio"
                   name="chooseColor"
-                  id="chooseColor"
+                  id="chooseColor2"
                   value="2"
                   
+                  style="cursor: pointer"
                 />
                 <div class="form__radio--color--palette">
                   <div class="form__radio--color colorA2"></div>
@@ -120,9 +131,10 @@
                   class="form__radio js-radio"
                   type="radio"
                   name="chooseColor"
-                  id="chooseColor"
+                  id="chooseColor3"
                   value="3"
                   
+                  style="cursor: pointer"
                 />
                 <div class="form__radio--color--palette">
                   <div class="form__radio--color colorA3"></div>
@@ -139,10 +151,15 @@
           <legend class="form__title js-fill__title">
             <i class="form__title--icon far fa-keyboard"></i>
             <h2 class="form__title--text">Rellena</h2>
-            <i class="form__title--chevron icon-medium far fa-chevron-down"></i>
+            <i
+              style="cursor: pointer"
+              class="form__title--chevron icon-medium far fa-chevron-down"
+            ></i>
           </legend>
           <div class="form__fill--wrapper">
-            <label for="fullname" class="form__label">Nombre Completo</label>
+            <label for="fullname" class="form__label"
+              >Nombre Completo<span class="required">*</span></label
+            >
             <input
               type="text"
               id="name"
@@ -152,7 +169,9 @@
               class="form__input js-name js-input"
               required
             />
-            <label for="job" class="form__label">Puesto</label>
+            <label for="job" class="form__label"
+              >Puesto<span class="required">*</span></label
+            >
             <input
               type="text"
               id="job"
@@ -162,14 +181,16 @@
               class="form__input js-job js-input"
               required
             />
-            <label for="profilepicture" class="form__label">Imagen de perfil</label>
+            <label for="profilepicture" class="form__label"
+              >Imagen de perfil<span class="required">*</span></label
+            >
 
             <div class="form__photosection">
               <label for="photo" class="form__photobutton js__profile-trigger"
                 >Añadir imagen</label
               >
               <input
-                class="form__photoinput js__profile-upload-btn js-input hidden"
+                class="form__photoinput js__profile-upload-btn js-photo hidden"
                 type="file"
                 name="photo"
                 id="photo"
@@ -177,7 +198,9 @@
               />
               <span class="form__photothumb js__profile-preview"></span>
             </div>
-            <label for="email" class="form__label">Email</label>
+            <label for="email" class="form__label"
+              >Email<span class="required">*</span></label
+            >
             <input
               type="email"
               id="email"
@@ -194,7 +217,9 @@
               placeholder="Ej: 555-55-55-55"
               class="form__input js-phone js-input"
             />
-            <label for="linkedin" class="form__label">Linkedin</label>
+            <label for="linkedin" class="form__label"
+              >Linkedin<span class="required">*</span></label
+            >
             <input
               type="text"
               id="linkedin"
@@ -203,7 +228,9 @@
               class="form__input js-linkedin js-input"
               required
             />
-            <label for="github" class="form__label">Github</label>
+            <label for="github" class="form__label"
+              >Github<span class="required">*</span></label
+            >
             <input
               type="text"
               id="github"
@@ -212,6 +239,7 @@
               class="form__input js-github js-input"
               required
             />
+            
           </div>
         </fieldset>
 
@@ -219,12 +247,13 @@
           <legend class="form__title js-share__title">
             <i class="form__title--icon fas fa-share-alt"></i>
             <h2 class="form__title--text">Comparte</h2>
-            <i class="form__title--chevron icon-medium far fa-chevron-down"></i>
+            <i style="cursor:pointer;" class="form__title--chevron icon-medium far fa-chevron-down"></i>
           </legend>
           <div class="form__share--wrapper">
-            <button class="form__submit js-submit" type="submit" disabled>
+            <button style="cursor:pointer"class="form__submit js-submit" type="submit" disabled>
               <i class="form__submit--icon far fa-address-card"></i>crear tarjeta
             </button>
+            <p class="js-text-error text__error"></p>
             <div class="js-link-card form__card"></div>
             <div class="js-twitter form__twitter"></div>
           </div>
@@ -235,14 +264,21 @@
     </section>
 
     <footer class="footer">
-
         <div class="footer__container">
             <section class="footer__copy">
-                Undefined &copy; 2021
+                u
+                <span class="required">·</span>n
+                <span class="required">·</span>d
+                <span class="required">·</span>e
+                <span class="required">·</span>f
+                <span class="required">·</span>i
+                <span class="required">·</span>n
+                <span class="required">·</span>e
+                <span class="required">·</span>d &copy; 2021
             </section>
         </div>
         <section class="footer__logo">
-            <img class="img" src="./assets/images/logo-adalab.png" alt="Logo Adalab">
+            <a href="https://adalab.es/" target="_blank"><img class="img" src="./assets/images/logo-adalab.png" alt="Logo Adalab"/></a>
         </section>
     </footer>
   </main>
