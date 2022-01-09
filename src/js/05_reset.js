@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 'use strict';
 
-const resetButton = document.querySelector('.js-reset');
+/* ----------------------------- Reset ------------------------------*/
 
 function handleResetCard() {
   document.querySelector('.js-form').reset();

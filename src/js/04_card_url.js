@@ -2,6 +2,8 @@
 /* eslint-disable no-undef */
 'use strict';
 
+/* ----------------------------- Fetch ------------------------------*/
+
 function handleChangeInputs() {
   let allReqFilled = true;
   for (const eachInput of allInput) {

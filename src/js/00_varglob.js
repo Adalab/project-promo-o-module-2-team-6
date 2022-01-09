@@ -24,6 +24,9 @@ const createButton = document.querySelector('.js-submit');
 const createLink = document.querySelector('.js-link-card');
 const createButtonTw = document.querySelector('.js-twitter');
 
+//Reset variable
+const resetButton = document.querySelector('.js-reset');
+
 //Data variable
 let data = {
   name: '',
