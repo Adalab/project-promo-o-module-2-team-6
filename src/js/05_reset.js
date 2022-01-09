@@ -13,11 +13,19 @@ function handleResetCard() {
   data.photo = ""
   data.palette = 1
 
-  renderPreview()
-  handleColorChange()
+  renderPreview();
+  handleColorChange();
 
   profileImage.style.backgroundImage = "";
   profilePreview.style.backgroundImage = "";
+
+  handleResetShare();
+  createButton.disabled = true;
+}
+
+function handleResetShare() {
+  createLink.innerHTML = '';
+  createButtonTw.innerHTML = '';
 }
 
 resetButton.addEventListener("click", handleResetCard);
