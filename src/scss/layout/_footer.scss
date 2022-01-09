@@ -19,6 +19,7 @@
 
   &__copy {
     font-size: 14px;
+    text-transform: capitalize;
     opacity: 0.5;
     color: $copy-text;
     @include tablet{

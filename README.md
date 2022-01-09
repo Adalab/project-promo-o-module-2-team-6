@@ -1,4 +1,4 @@
-![Logo](./src/images/Tarjetas-molonas.svg)
+![Logo](./src/images/dont-be-undefined-logo.svg)
 
 # Awesome profile cards - Proyecto Módulo 2
 
@@ -10,13 +10,13 @@
 
 ### Equipo de desarollo
 
-[![Autor](https://img.shields.io/badge/github-Esther%20Fernández-yellow?style=for-the-badge&logo=github)](https://github.com/GitTher)  
+[![Autor](https://img.shields.io/badge/github-Esther%20Fernández-yellow?style=for-the-badge&logo=github)](https://github.com/GitTher)
 
-[![Autor](https://img.shields.io/badge/github-Elena%20Fernández-brightgreen?style=for-the-badge&logo=github)](https://github.com/ElenaFernandez)  
+[![Autor](https://img.shields.io/badge/github-Elena%20Fernández-brightgreen?style=for-the-badge&logo=github)](https://github.com/ElenaFernandez)
 
-[![Autor](https://img.shields.io/badge/github-Denise%20Overbeck-blue?style=for-the-badge&logo=github)](https://github.com/denisetroglio)  
+[![Autor](https://img.shields.io/badge/github-Denise%20Overbeck-blue?style=for-the-badge&logo=github)](https://github.com/denisetroglio)
 
-[![Autor](https://img.shields.io/badge/github-Inma%20Sánchez-red?style=for-the-badge&logo=github)](https://github.com/iscasaban)  
+[![Autor](https://img.shields.io/badge/github-Inma%20Sánchez-red?style=for-the-badge&logo=github)](https://github.com/iscasaban)
 
 [![Autor](https://img.shields.io/badge/github-Paula%20Perera-black?style=for-the-badge&logo=github)](https://github.com/PaulaEPR)
 
@@ -24,14 +24,14 @@
 
 - HTML
 - Preprocesador de CSS: SASS con sintaxis SCSS
-    - BEM
-    - Flexbox y Grid
-    - Variables y Mixins
-    - Estilos anidados
+  - BEM
+  - Flexbox y Grid
+  - Variables y Mixins
+  - Estilos anidados
 - JavaScript
-    - Escuchar eventos del HTML y realizar cambios desde JS en el HTML y CSS
+  - Escuchar eventos del HTML y realizar cambios desde JS en el HTML y CSS
 - Control de versiones con Git a través de la terminal
 - Automatización de procesos con Gulp de NodeJS
 - Planificación del proyecto bajo el marco de trabajo Scrum
-    - Slack
-    - GitHub Projects
+  - Slack
+  - GitHub Projects
