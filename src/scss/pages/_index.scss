@@ -168,6 +168,18 @@
   font-family: $font-index-subtitle;
   text-decoration: none;
 }
+
+.click{
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em;
+  margin: -2em;
+  color: $text-button;
+  font-size: 16px;
+  font-family: $font-index-subtitle;
+  text-decoration: none;
+}
 .btn {
   text-transform: uppercase;
   width: 160px;
