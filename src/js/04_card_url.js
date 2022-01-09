@@ -2,10 +2,6 @@
 /* eslint-disable no-undef */
 'use strict';
 
-const createButton = document.querySelector('.js-submit');
-const createLink = document.querySelector('.js-link-card');
-const createButtonTw = document.querySelector('.js-twitter');
-
 function handleChangeInputs() {
   let allReqFilled = true;
   for (const eachInput of allInput) {

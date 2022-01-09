@@ -3,13 +3,14 @@
 'use strict';
 
 
-/* ----------------------------- Preview ------------------------------*/
+/* ---------------------------- Global variables -----------------------------*/
 
-/* --- Input variables --- */
+//Input variables
 const allInput = document.querySelectorAll('.js-input');
 const allRadio = document.querySelectorAll('.js-radio');
+const inputColors = document.querySelectorAll('.js-palette');
 
-/* --- Preview variables --- */
+//Preview variables
 const namePreview = document.querySelector('.js-preview-name');
 const jobPreview = document.querySelector('.js-preview-job');
 const emailPreview = document.querySelector('.js-preview-email');
@@ -18,7 +19,12 @@ const linkedinPreview = document.querySelector('.js-preview-linkedin');
 const githubPreview = document.querySelector('.js-preview-github');
 const textError = document.querySelector('.js-text-error');
 
-/* --- All --- */
+//Fetch variables
+const createButton = document.querySelector('.js-submit');
+const createLink = document.querySelector('.js-link-card');
+const createButtonTw = document.querySelector('.js-twitter');
+
+//Data variable
 let data = {
   name: '',
   job: '',

@@ -2,7 +2,8 @@
 /* eslint-disable no-undef */
 'use strict';
 
-//Local storage
+/* ----------------------------- Local Storage ------------------------------*/
+
 const getFromLocalStorage = () => {
   const localStorageData = localStorage.getItem('userData');
   if (localStorageData !== null) {
@@ -33,7 +34,9 @@ const deleteFromLocalStorage = () => {
   localStorage.removeItem('userData');
 };
 
-//Handler Input & Radio
+/* ----------------------------- Render ------------------------------*/
+
+//Content functions
 function handleWriteInput(event) {
   const userInput = event.target.name;
   const userValue = event.target.value;
@@ -50,7 +53,6 @@ function handleWriteRadio(event) {
   setInLocalStorage();
 }
 
-//Render functions
 function renderItemText(objectProperty, where, defaultText) {
   if (objectProperty === '') {
     where.innerHTML = defaultText;
@@ -86,74 +88,35 @@ for (const eachRadio of allRadio) {
   eachRadio.addEventListener('click', handleWriteRadio);
 }
 
-// COLORES
-//Declarar variables:
-
-const inputColors = document.querySelectorAll('.js-palette');
-
-//Funciones:
-
-function handleColorChange() {
-  const inputRadio = document.querySelectorAll('.js-radio');
+//Style functions
+function colorChange(eachRadio, add, remove1, remove2) {
   const inputIcons = document.querySelectorAll('.js-icons');
   const borderIcons = document.querySelectorAll('.js-border');
   const borderText = document.querySelector('.js-borderleft');
-  for (const eachRadio of inputRadio) {
-    if (eachRadio.value === '1' && eachRadio.checked) {
-      namePreview.classList.add('colorgreen');
-      namePreview.classList.remove('colorred');
-      namePreview.classList.remove('coloryellow');
-      for (const eachIcon of inputIcons) {
-        eachIcon.classList.add('colourgreen');
-        eachIcon.classList.remove('colourred');
-        eachIcon.classList.remove('colouryellow');
-      }
-      for (const eachBorder of borderIcons) {
-        eachBorder.classList.add('bordergreen');
-        eachBorder.classList.remove('borderred');
-        eachBorder.classList.remove('borderyellow');
-      }
-      borderText.classList.add('leftgreen');
-      borderText.classList.remove('leftred');
-      borderText.classList.remove('leftyellow');
-    } else if (eachRadio.value === '2' && eachRadio.checked) {
-      namePreview.classList.remove('colorgreen');
-      namePreview.classList.add('colorred');
-      namePreview.classList.remove('coloryellow');
-      for (const eachIcon of inputIcons) {
-        eachIcon.classList.remove('colourgreen');
-        eachIcon.classList.add('colourred');
-        eachIcon.classList.remove('colouryellow');
-      }
-      for (const eachBorder of borderIcons) {
-        eachBorder.classList.remove('bordergreen');
-        eachBorder.classList.add('borderred');
-        eachBorder.classList.remove('borderyellow');
-      }
-      borderText.classList.remove('leftgreen');
-      borderText.classList.add('leftred');
-      borderText.classList.remove('leftyellow');
-    } else if (eachRadio.value === '3' && eachRadio.checked) {
-      namePreview.classList.remove('colorgreen');
-      namePreview.classList.remove('colorred');
-      namePreview.classList.add('coloryellow');
-      for (const eachIcon of inputIcons) {
-        eachIcon.classList.remove('colourgreen');
-        eachIcon.classList.remove('colourred');
-        eachIcon.classList.add('colouryellow');
-      }
-      for (const eachBorder of borderIcons) {
-        eachBorder.classList.remove('bordergreen');
-        eachBorder.classList.remove('borderred');
-        eachBorder.classList.add('borderyellow');
-      }
-      borderText.classList.remove('leftgreen');
-      borderText.classList.remove('leftred');
-      borderText.classList.add('leftyellow');
+  if (eachRadio.value === add && eachRadio.checked) {
+    namePreview.classList.add(`text${add}`);
+    namePreview.classList.remove(`text${remove1}`, `text${remove2}`);
+    for (const eachIcon of inputIcons) {
+      eachIcon.classList.add(`icon${add}`);
+      eachIcon.classList.remove(`icon${remove1}`, `icon${remove2}`);
     }
+    for (const eachBorder of borderIcons) {
+      eachBorder.classList.add(`border-icon${add}`);
+      eachBorder.classList.remove(`border-icon${remove1}`, `border-icon${remove2}`);
+    }
+    borderText.classList.add(`border-text${add}`);
+    borderText.classList.remove(`border-text${remove1}`, `border-text${remove2}`);
   }
 }
-//Hacer un evento:
+
+function handleColorChange() {
+  const inputRadio = document.querySelectorAll('.js-radio');
+  for (const eachRadio of inputRadio) {
+    colorChange(eachRadio, '1', '2', '3');
+    colorChange(eachRadio, '2', '1', '3');
+    colorChange(eachRadio, '3', '2', '1');
+  }
+}
 
 for (const eachColors of inputColors) {
   eachColors.addEventListener('click', handleColorChange);

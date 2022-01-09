@@ -2,7 +2,7 @@
 
 /* --------------------------- Collapsables ----------------------------*/
 
-/* --- Función colapsar titulos formularios ---*/
+//Collapse form titles
 function handlerClickCollapsable(event) {
   const formDesign = document.querySelector('.form__design');
   const formFill = document.querySelector('.form__fill');
@@ -24,14 +24,14 @@ function handlerClickCollapsable(event) {
   event.currentTarget.parentNode.classList.toggle('collapsed');
 }
 
-/* --- Collapsable Design --- */
+//Collapsable Design
 const collapsableDesign = document.querySelector('.js-design__title');
 collapsableDesign.addEventListener('click', handlerClickCollapsable);
 
-/* --- Collapsable Fill --- */
+//Collapsable Fill
 const collapsableFill = document.querySelector('.js-fill__title');
 collapsableFill.addEventListener('click', handlerClickCollapsable);
 
-/* --- Collapsable Share --- */
+//Collapsable Share
 const collapsableShare = document.querySelector('.js-share__title');
 collapsableShare.addEventListener('click', handlerClickCollapsable);
