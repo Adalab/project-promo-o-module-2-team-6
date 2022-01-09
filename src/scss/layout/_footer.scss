@@ -22,9 +22,6 @@
     text-transform: capitalize;
     opacity: 0.5;
     color: $copy-text;
-    @include tablet{
-      margin-left: 40px;
-    }
   }
 
   &__logo {
