@@ -19,7 +19,7 @@ function autoCompleteInputs() {
     eachInput.value = data[eachInput.name];
   }
   for (const eachRadio of allRadio) {
-    if (eachRadio.id === `chooseColor${parseInt(data.palette)}`) {
+    if (eachRadio.value === data.palette) {
       eachRadio.checked =  true;
     }
   }
@@ -42,15 +42,16 @@ function handleWriteInput(event) {
   const userValue = event.target.value;
   data[userInput] = userValue;
   renderPreview();
-  handleResetShare();
   setInLocalStorage();
+  handleResetShare();
 }
 
 function handleWriteRadio(event) {
   const userValue = event.target.value;
   data.palette = parseInt(userValue);
-  handleResetShare();
   setInLocalStorage();
+  handleResetShare();
+  handleChangeInputs();
 }
 
 function renderItemText(objectProperty, where, defaultText) {
