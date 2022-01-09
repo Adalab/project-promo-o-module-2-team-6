@@ -29,7 +29,8 @@
   - Variables y Mixins
   - Estilos anidados
 - JavaScript
-  - Escuchar eventos del HTML y realizar cambios desde JS en el HTML y CSS
+  - Escuchar eventos provocados por el usuario y realizar cambios desde JS en el DOM.
+  - Uso de APIs: Peticiones al servidor mediante el método POST
 - Control de versiones con Git a través de la terminal
 - Automatización de procesos con Gulp de NodeJS
 - Planificación del proyecto bajo el marco de trabajo Scrum
